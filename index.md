@@ -1,37 +1,34 @@
-## Welcome to GitHub Pages
+# INFINI Gateway for Elasticsearch
 
-You can use the [editor on GitHub](https://github.com/infini-pages/www.elasticsearch-proxy.com/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Introduction
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+**INFINI Gateway** is a high performance gateway for Elasticsearch. It offers a broad range of features and is easy to use. INFINI Gateway works in the same way as a common reverse proxy. 
+It is usually deployed in front of Elasticsearch clusters. All requests are sent to the gateway instead of Elasticsearch, and then the gateway forwards the requests to the back-end Elasticsearch clusters. 
+The gateway is deployed between the client and Elasticsearch. Therefore, the gateway can be configured to perform index-level traffic control and throttling, cache acceleration for common queries, query request audit, and dynamic modification of query results.
 
-### Markdown
+[Learn More](https://gateway.infini.sh/docs/overview/)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+## Features
 
-# Header 1
-## Header 2
-### Header 3
+> The application-layer INFINI Gateway is especially designed for Elasticsearch and offers powerful features.
 
-- Bulleted
-- List
+- High availability: The gateway supports non-stop indexing and is capable of automatically processing faults occurring on Elasticsearch, without affecting normal data ingestion.
+- Write acceleration: The gateway can automatically merge independent index requests into a bulk request, thereby reducing back-end pressure and improving indexing efficiency.
+- Query acceleration: Query cache can be configured on INFINI Gateway and Kibana dashboards can accelerate the query seamlessly and intelligently to fully enhance search experience.
+- Seamless retry: The gateway automatically processes faults occurring on Elasticsearch, and migrates and retries query requests.
+- Traffic cloning: The gateway can replicate traffic to multiple different Elasticsearch clusters and supports traffic migration through canary deployment.
+- One-click rebuilding: The optimized high-speed index rebuilding and automatic processing of incremental data enable the gateway to seamlessly switch between old and new indexes.
+- Secure transmission: The gateway supports the Transport Layer Security (TLS) and Hypertext Transfer Protocol Secure (HTTPS) protocols. It can automatically generate certification files and supports specified trust certification files.
+- Precision routing: The gateway supports the load balancing mode using multiple algorithms, in which load routing strategies can be separately configured for indexing and query, providing great flexibility.
+- Traffic control and throttling: Multiple traffic control and throttling rules can be configured to implement index-level traffic control and ensure the stability of back-end clusters.
+- Concurrency control: The gateway can control cluster- and node-level concurrent TCP connections to ensure the stability of back-end clusters and nodes.
+- No single point of failure (SPOF): The built-in virtual IP-based high availability solution supports dual-node hot standby and automatic failover to prevent SPOFs.
+- Request observability: The gateway is equipped with the logging and indicator monitoring features to fully analyze Elasticsearch requests.
 
-1. Numbered
-2. List
+[Get Started Now](https://gateway.infini.sh/docs/getting-started/install)
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+## Who Is Using INFINI Gateway?
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/infini-pages/www.elasticsearch-proxy.com/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+If you are using INFINI Gateway and feel it pretty good, please [let us know](https://github.com/infinilabs/gateway/discussions/3). All our user cases are located [here](https://gateway.infini.sh/docs/user-cases/). Thank you for your support.
