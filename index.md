@@ -1,3 +1,5 @@
+# This is the Elasticsearch Proxy you are looking for
+
 # INFINI Gateway for Elasticsearch
 
 ## Introduction
